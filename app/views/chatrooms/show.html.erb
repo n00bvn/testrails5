@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Chatroom Name:</strong>
+  <%= @chatroom.name %>
+</p>
+
+<%= link_to 'Edit', edit_chatroom_path(@chatroom) %> |
+<%= link_to 'Back', chatrooms_path %>
+
+
+<h1>Messages:</h1>
+<p>
+  <% if @chatroom.messages.any? %>
+    <div style="visibility: visible" id="messages">
+      <%= render partial: 'messages/message', collection: @chatroom.messages %>
+    </div>
+  <% else %>
+    <div id="nomessagesyet">No messages yet!</div>
+    <div style="visibility: hidden" id="messages">
+    </div>
+  <% end %>
+</p>
+
+<p>
+  <h3>New Message:</h3><br/>
+  <%= render partial: 'messages/message_form', locals: {message: @message, chatroom: @chatroom} %>
+</p>
