@@ -3,6 +3,11 @@
 <p>
   <strong>Chatroom Name:</strong>
   <%= @chatroom.name %>
+  <% if @chatroom.avatar.present? %>
+    <p>
+      <%= image_tag @chatroom.avatar.url(:thumb) %>
+    </p>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_chatroom_path(@chatroom) %> |

@@ -1,3 +1,8 @@
 <div>
   <strong><%= message.username %>:</strong> <%= message.content %>
+  <% if message.picture.present? %>
+    <p>
+      <%= image_tag message.picture.url(:thumb) %>
+    </p>
+  <% end %>
 </div>

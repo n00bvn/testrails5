@@ -2755,3 +2755,2269 @@ Finished "/cable/" [WebSocket] for 192.168.0.81 at 2016-08-11 13:54:52 +0700
 MessagesChannel stopped streaming from messages
 Finished "/cable/" [WebSocket] for 192.168.0.81 at 2016-08-11 13:54:53 +0700
 MessagesChannel stopped streaming from messages
+Started GET "/chatrooms/1" for 127.0.0.1 at 2016-08-25 09:35:31 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [12 times] (0.5ms)
+  Rendered messages/_message_form.html.erb (21.4ms)
+  Rendered chatrooms/show.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 408ms (Views: 363.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:35:32 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:35:32 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:35:32 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:35:38 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:35:38 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:35:38 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:35:41 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:35:41 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:35:41 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:35:47 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:35:47 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:35:47 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:35:54 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:35:54 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:35:54 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:36:02 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:36:02 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:36:02 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:36:11 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:36:11 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:36:11 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:36:21 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:36:21 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:36:21 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:36:31 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:36:31 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:36:31 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:36:42 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:36:42 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:36:42 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:36:53 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:36:53 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:36:53 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:37:08 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:37:08 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:37:08 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:37:30 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:37:30 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:37:30 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:38:04 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:38:04 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:38:04 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:38:54 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:38:54 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:38:54 +0700
+Started GET "/" for 192.168.0.73 at 2016-08-25 09:39:39 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (31.7ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (75.0ms)
+Completed 200 OK in 759ms (Views: 686.0ms | ActiveRecord: 31.7ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 09:39:40 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:39:40 +0700
+Request origin not allowed: http://192.168.0.73:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:39:40 +0700
+Started GET "/" for 192.168.0.73 at 2016-08-25 09:39:41 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 96ms (Views: 77.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.73 at 2016-08-25 09:39:44 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (725.2ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [12 times] (3.5ms)
+  Rendered messages/_message_form.html.erb (2.2ms)
+  Rendered chatrooms/show.html.erb within layouts/application (67.3ms)
+Completed 200 OK in 869ms (Views: 110.0ms | ActiveRecord: 725.7ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 09:39:46 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:39:46 +0700
+Request origin not allowed: http://192.168.0.73:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:39:46 +0700
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 09:39:50 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:39:50 +0700
+Request origin not allowed: http://192.168.0.73:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:39:50 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:39:54 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:39:54 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:39:54 +0700
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 09:39:55 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:39:55 +0700
+Request origin not allowed: http://192.168.0.73:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:39:55 +0700
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 09:40:02 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:40:02 +0700
+Request origin not allowed: http://192.168.0.73:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:40:02 +0700
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 09:40:10 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:40:10 +0700
+Request origin not allowed: http://192.168.0.73:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:40:10 +0700
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 09:40:19 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:40:19 +0700
+Request origin not allowed: http://192.168.0.73:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:40:19 +0700
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 09:40:29 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:40:29 +0700
+Request origin not allowed: http://192.168.0.73:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:40:29 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-08-25 09:40:54 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:40:54 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-08-25 09:40:54 +0700
+Started GET "/" for 192.168.0.73 at 2016-08-25 09:46:25 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.4ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 1833ms (Views: 1556.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 09:46:30 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:46:30 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 09:46:30 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.1ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:46:36 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 09:46:41 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 09:46:41 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:46:41 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 09:46:41 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.73 at 2016-08-25 09:46:43 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [12 times] (1.1ms)
+  Rendered messages/_message_form.html.erb (96.2ms)
+  Rendered chatrooms/show.html.erb within layouts/application (205.8ms)
+Completed 200 OK in 894ms (Views: 244.3ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/messages" for 192.168.0.73 at 2016-08-25 09:47:27 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UwShV8oWpdrc0STHU/S15csFCFP9e1KCnSeFpyseXVf6VCKsbLHyZ+pFskjvTdD/ypBk1qoslG9KU9/kZsXJzw==", "message"=>{"username"=>"userM", "content"=>"Test mobile", "chatroom_id"=>"1"}, "commit"=>"send"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (10.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "username", "chatroom_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Test mobile"], ["username", "userM"], ["chatroom_id", 1], ["created_at", 2016-08-25 02:47:27 UTC], ["updated_at", 2016-08-25 02:47:27 UTC]]
+  [1m[35m (210.2ms)[0m  [1m[36mcommit transaction[0m
+[ActionCable] Broadcasting to messages: {:message=>#<Message id: 13, content: "Test mobile", username: "userM", chatroom_id: 1, created_at: "2016-08-25 02:47:27", updated_at: "2016-08-25 02:47:27">}
+Completed 200 OK in 227ms (ActiveRecord: 220.5ms)
+
+
+MessagesChannel transmitting {"message"=>{"id"=>13, "content"=>"Test mobile", "username"=>"userM", "chatroom_id"=>1, "created_at"=>"2016-08-25T02:47:27.764Z", "updated_at"=>"2016-08-25T02:47:27.764Z"}} (via streamed from messages)
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:48:11 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 09:53:56 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 2152ms (Views: 1696.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 09:54:01 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 192.168.0.73 at 2016-08-25 09:54:01 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.4ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 182ms (Views: 181.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:54:02 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/chatrooms/1" for 192.168.0.73 at 2016-08-25 09:54:06 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.4ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (1.3ms)
+  Rendered messages/_message_form.html.erb (297.3ms)
+  Rendered chatrooms/show.html.erb within layouts/application (506.4ms)
+Completed 200 OK in 687ms (Views: 540.0ms | ActiveRecord: 1.3ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 09:57:23 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 14:10:02 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 725ms (Views: 515.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 14:10:06 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 192.168.0.73 at 2016-08-25 14:10:06 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.3ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 14:10:06 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 14:10:11 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 14:10:14 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 14:10:15 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 14:10:15 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 14:10:15 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.73 at 2016-08-25 14:10:17 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.4ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (1.0ms)
+  Rendered messages/_message_form.html.erb (214.7ms)
+  Rendered chatrooms/show.html.erb within layouts/application (309.4ms)
+Completed 200 OK in 477ms (Views: 357.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 192.168.0.73 at 2016-08-25 14:10:44 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 14:10:44 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 14:10:44 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/chatrooms/1" for 192.168.0.73 at 2016-08-25 14:10:47 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (10.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (0.5ms)
+  Rendered messages/_message_form.html.erb (1.8ms)
+  Rendered chatrooms/show.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 37ms (Views: 24.9ms | ActiveRecord: 10.8ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 14:11:22 +0700
+MessagesChannel stopped streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 14:11:23 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 17:03:22 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (44.9ms)
+Completed 200 OK in 1816ms (Views: 1630.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 17:03:26 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 192.168.0.73 at 2016-08-25 17:03:27 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 17:03:27 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/chatrooms/1" for 192.168.0.73 at 2016-08-25 17:03:33 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.5ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (0.6ms)
+  Rendered messages/_message_form.html.erb (128.1ms)
+  Rendered chatrooms/show.html.erb within layouts/application (230.7ms)
+Completed 200 OK in 634ms (Views: 256.3ms | ActiveRecord: 1.4ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 17:04:02 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 17:20:32 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (19.0ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (133.0ms)
+Completed 200 OK in 1146ms (Views: 1096.0ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 17:20:35 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 17:20:35 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 17:20:35 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.73 at 2016-08-25 17:21:00 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (1.2ms)
+  Rendered messages/_message_form.html.erb (4.6ms)
+  Rendered chatrooms/show.html.erb within layouts/application (106.8ms)
+Completed 200 OK in 281ms (Views: 127.5ms | ActiveRecord: 0.4ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 17:21:24 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 17:42:02 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 332ms (Views: 331.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 17:42:02 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 17:42:02 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 17:42:03 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.73 at 2016-08-25 17:42:07 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (2.4ms)
+  Rendered messages/_message_form.html.erb (4.0ms)
+  Rendered chatrooms/show.html.erb within layouts/application (153.6ms)
+Completed 200 OK in 177ms (Views: 174.2ms | ActiveRecord: 0.4ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 17:42:29 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 18:24:17 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 18:24:18 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:24:18 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 18:24:19 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.73 at 2016-08-25 18:24:21 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (0.5ms)
+  Rendered messages/_message_form.html.erb (1.3ms)
+  Rendered chatrooms/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.73 at 2016-08-25 18:24:31 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (0.5ms)
+  Rendered messages/_message_form.html.erb (1.9ms)
+  Rendered chatrooms/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 18:24:31 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:24:31 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/chatrooms/1" for 192.168.0.73 at 2016-08-25 18:24:34 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (0.5ms)
+  Rendered messages/_message_form.html.erb (1.5ms)
+  Rendered chatrooms/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.4ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:24:35 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 18:24:35 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:24:35 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 18:24:44 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (92.6ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (94.1ms)
+Completed 200 OK in 110ms (Views: 16.5ms | ActiveRecord: 92.6ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.73 at 2016-08-25 18:24:47 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.3ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (0.6ms)
+  Rendered messages/_message_form.html.erb (3.0ms)
+  Rendered chatrooms/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 18:27:10 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:27:10 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:27:27 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 18:27:32 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 291ms (Views: 233.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 18:27:32 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:27:32 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 18:27:32 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.73 at 2016-08-25 18:27:34 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.4ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (0.5ms)
+  Rendered messages/_message_form.html.erb (42.7ms)
+  Rendered chatrooms/show.html.erb within layouts/application (92.2ms)
+Completed 200 OK in 314ms (Views: 134.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 18:27:39 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:27:39 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 18:27:42 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:27:42 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 18:27:43 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:27:43 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/chatrooms/1" for 192.168.0.73 at 2016-08-25 18:27:44 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (0.5ms)
+  Rendered messages/_message_form.html.erb (1.7ms)
+  Rendered chatrooms/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.5ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:28:24 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 18:28:25 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.3ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 39ms (Views: 36.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 18:28:25 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:28:25 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 18:28:25 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.3ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.3ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:28:29 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 18:28:32 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 18:28:32 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:28:32 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 18:28:32 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.1ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:28:36 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 18:28:51 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 18:28:51 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:28:51 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 18:28:51 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.1ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:28:54 +0700
+MessagesChannel stopped streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:29:32 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 18:30:51 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.3ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 207ms (Views: 195.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 18:30:51 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:30:51 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 18:30:52 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.3ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.3ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:30:55 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 18:30:58 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 192.168.0.73 at 2016-08-25 18:30:58 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:30:58 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.73 at 2016-08-25 18:30:58 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.3ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.73 at 2016-08-25 18:31:00 +0700
+Cannot render console from 192.168.0.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (1.2ms)
+  Rendered messages/_message_form.html.erb (29.9ms)
+  Rendered chatrooms/show.html.erb within layouts/application (83.9ms)
+Completed 200 OK in 151ms (Views: 129.7ms | ActiveRecord: 1.3ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.73 at 2016-08-25 18:31:23 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.77 at 2016-08-26 10:48:52 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 1117ms (Views: 930.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cable" for 192.168.0.77 at 2016-08-26 10:48:56 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.77 at 2016-08-26 10:48:56 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.77 at 2016-08-26 10:48:57 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.3ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.3ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.77 at 2016-08-26 10:49:02 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.77 at 2016-08-26 10:49:05 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 192.168.0.77 at 2016-08-26 10:49:05 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.77 at 2016-08-26 10:49:05 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.77 at 2016-08-26 10:49:05 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.77 at 2016-08-26 10:49:07 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.7ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (0.9ms)
+  Rendered messages/_message_form.html.erb (67.1ms)
+  Rendered chatrooms/show.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 387ms (Views: 178.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.77 at 2016-08-26 10:49:35 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (2.3ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (1.0ms)
+  Rendered messages/_message_form.html.erb (5.3ms)
+  Rendered chatrooms/show.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 60ms (Views: 55.0ms | ActiveRecord: 2.9ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.77 at 2016-08-26 10:49:52 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.77 at 2016-08-26 10:49:57 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.3ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cable" for 192.168.0.77 at 2016-08-26 10:49:58 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.77 at 2016-08-26 10:49:58 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.77 at 2016-08-26 10:49:58 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.1ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.77 at 2016-08-26 10:50:02 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.77 at 2016-08-26 10:50:06 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 192.168.0.77 at 2016-08-26 10:50:06 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.77 at 2016-08-26 10:50:06 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.77 at 2016-08-26 10:50:06 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.3ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.3ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.77 at 2016-08-26 10:50:09 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.77 at 2016-08-26 10:50:20 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cable" for 192.168.0.77 at 2016-08-26 10:50:20 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.77 at 2016-08-26 10:50:20 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.77 at 2016-08-26 10:50:20 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.77 at 2016-08-26 10:50:22 +0700
+Cannot render console from 192.168.0.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (0.6ms)
+  Rendered messages/_message_form.html.erb (3.1ms)
+  Rendered chatrooms/show.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.9ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.77 at 2016-08-26 10:50:39 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 10:50:09 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 255ms (Views: 204.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 10:50:10 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 10:50:10 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 10:54:18 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 10:54:18 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 10:54:18 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 10:54:32 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 10:54:37 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.3ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 10:54:37 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 10:54:37 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 10:55:04 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 10:55:12 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 10:55:13 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 10:55:13 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 10:57:44 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 11:00:29 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 11:00:29 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:00:29 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:08:00 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 11:18:34 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (87.9ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (139.0ms)
+Completed 200 OK in 733ms (Views: 535.8ms | ActiveRecord: 87.9ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 11:18:35 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:18:35 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:18:52 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 11:21:29 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 11:21:29 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:21:29 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:21:58 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 11:36:49 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 11:36:49 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:36:49 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 11:36:49 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:37:11 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 11:37:33 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 11:37:34 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:37:34 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:37:50 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 11:38:09 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 11:38:09 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:38:09 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 11:38:09 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:38:13 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 11:38:19 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 11:38:19 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:38:19 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 11:38:19 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.75 at 2016-09-01 11:38:22 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (248.4ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (7.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (1.7ms)
+  Rendered messages/_message_form.html.erb (125.5ms)
+  Rendered chatrooms/show.html.erb within layouts/application (210.6ms)
+Completed 200 OK in 822ms (Views: 222.6ms | ActiveRecord: 257.6ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:38:26 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 11:39:11 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 11:39:12 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:39:12 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 11:39:12 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.75 at 2016-09-01 11:39:18 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (0.4ms)
+  Rendered messages/_message_form.html.erb (2.5ms)
+  Rendered chatrooms/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.75 at 2016-09-01 11:39:28 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (0.6ms)
+  Rendered messages/_message_form.html.erb (2.9ms)
+  Rendered chatrooms/show.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.75 at 2016-09-01 11:41:07 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (0.5ms)
+  Rendered messages/_message_form.html.erb (2.3ms)
+  Rendered chatrooms/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.75 at 2016-09-01 11:41:36 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (0.4ms)
+  Rendered messages/_message_form.html.erb (1.3ms)
+  Rendered chatrooms/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.3ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:44:49 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 11:44:57 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 11:44:58 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:44:58 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 11:44:58 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.75 at 2016-09-01 11:45:01 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (0.7ms)
+  Rendered messages/_message_form.html.erb (1.7ms)
+  Rendered chatrooms/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.75 at 2016-09-01 11:45:07 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.3ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (0.6ms)
+  Rendered messages/_message_form.html.erb (1.7ms)
+  Rendered chatrooms/show.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 47ms (Views: 43.5ms | ActiveRecord: 1.0ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:45:35 +0700
+MessagesChannel stopped streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 11:45:43 +0700
+MessagesChannel stopped streaming from messages
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAttachmentPictureToMessages (20160901075212)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddAttachmentPictureToMessages < ActiveRecord::Migration[4.2] (called from load at /home/thogmo/.rvm/gems/ruby-2.3.0/bin/rake:23)
+  [1m[35m (13.2ms)[0m  [1m[35mALTER TABLE "messages" ADD "picture_file_name" varchar[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "messages" ADD "picture_content_type" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "messages" ADD "picture_file_size" integer[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "messages" ADD "picture_updated_at" datetime[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160901075212"]]
+  [1m[35m (135.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_messages_on_chatroom_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_messages_on_chatroom_id' AND type='index'
+[0m
+Started GET "/chatrooms/1" for 127.0.0.1 at 2016-09-01 15:01:46 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (1.5ms)
+  Rendered messages/_message_form.html.erb (12.1ms)
+  Rendered chatrooms/show.html.erb within layouts/application (54.5ms)
+Completed 200 OK in 548ms (Views: 388.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:01:47 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:01:47 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:01:47 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:01:53 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:01:53 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:01:53 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:01:57 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:01:57 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:01:57 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:02:02 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:02:02 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:02:02 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:02:09 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:02:09 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:02:09 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:02:17 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:02:17 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:02:17 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:02:26 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:02:26 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:02:26 +0700
+Started GET "/chatrooms/1" for 127.0.0.1 at 2016-09-01 15:02:33 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [13 times] (1.6ms)
+  Rendered messages/_message_form.html.erb (13.9ms)
+  Rendered chatrooms/show.html.erb within layouts/application (45.3ms)
+Completed 200 OK in 216ms (Views: 184.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:02:34 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:02:34 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:02:34 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:02:40 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:02:40 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:02:40 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:02:49 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:02:49 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:02:49 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:03:03 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:03:03 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:03:03 +0700
+Started POST "/messages" for 127.0.0.1 at 2016-09-01 15:03:15 +0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/K412ACKrtBrlanucwIVQDmQ/0P3iVhwzSeX2zGfTlgQ3IDr7Kat+gS0Rfglkn0+QQ7yaV+O37Big8AtgL64gg==", "message"=>{"username"=>"userupload", "content"=>"test upload picture", "picture"=>#<ActionDispatch::Http::UploadedFile:0x000000054197b8 @tempfile=#<Tempfile:/tmp/RackMultipart20160901-13327-1j3oq7i.jpg>, @original_filename="13900794_10208193040534974_1489499024_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"message[picture]\"; filename=\"13900794_10208193040534974_1489499024_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "chatroom_id"=>"1"}, "commit"=>"send"}
+Command :: file -b --mime '/tmp/60f7c72b83f2db51e1fc6892920df14b20160901-13327-c2voba.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/60f7c72b83f2db51e1fc6892920df14b20160901-13327-1bmnhdo.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/60f7c72b83f2db51e1fc6892920df14b20160901-13327-1bmnhdo.jpg[0]'
+Command :: convert '/tmp/60f7c72b83f2db51e1fc6892920df14b20160901-13327-1bmnhdo.jpg[0]' -auto-orient -resize "300x300>" '/tmp/1a8133277f53643038f90f884f3743b020160901-13327-140qii'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/60f7c72b83f2db51e1fc6892920df14b20160901-13327-1bmnhdo.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/60f7c72b83f2db51e1fc6892920df14b20160901-13327-1bmnhdo.jpg[0]'
+Command :: convert '/tmp/60f7c72b83f2db51e1fc6892920df14b20160901-13327-1bmnhdo.jpg[0]' -auto-orient -resize "100x100>" '/tmp/1a8133277f53643038f90f884f3743b020160901-13327-1tsecxy'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/tmp/60f7c72b83f2db51e1fc6892920df14b20160901-13327-1bvjcxt.jpg'
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "username", "chatroom_id", "created_at", "updated_at", "picture_file_name", "picture_content_type", "picture_file_size", "picture_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["content", "test upload picture"], ["username", "userupload"], ["chatroom_id", 1], ["created_at", 2016-09-01 08:03:15 UTC], ["updated_at", 2016-09-01 08:03:15 UTC], ["picture_file_name", "13900794_10208193040534974_1489499024_n.jpg"], ["picture_content_type", "image/jpeg"], ["picture_file_size", 35622], ["picture_updated_at", 2016-09-01 08:03:15 UTC]]
+  [1m[35m (153.9ms)[0m  [1m[36mcommit transaction[0m
+[ActionCable] Broadcasting to messages: {:message=>#<Message id: 14, content: "test upload picture", username: "userupload", chatroom_id: 1, created_at: "2016-09-01 08:03:15", updated_at: "2016-09-01 08:03:15", picture_file_name: "13900794_10208193040534974_1489499024_n.jpg", picture_content_type: "image/jpeg", picture_file_size: 35622, picture_updated_at: "2016-09-01 08:03:15">}
+Completed 200 OK in 444ms (ActiveRecord: 155.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-01 15:03:34 +0700
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.6ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:03:34 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:03:34 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:03:34 +0700
+Started GET "/chatrooms/1" for 127.0.0.1 at 2016-09-01 15:03:36 +0700
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [14 times] (1.5ms)
+  Rendered messages/_message_form.html.erb (1.5ms)
+  Rendered chatrooms/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:04:05 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:04:05 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:04:05 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:04:53 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:04:53 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:04:53 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:05:53 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:05:53 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:05:53 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:06:53 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:06:53 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:06:53 +0700
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:07:53 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:07:53 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:07:53 +0700
+Started POST "/messages" for 127.0.0.1 at 2016-09-01 15:08:29 +0700
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HSe4dE5w+AxwgQm/IdazDoHdEau8IvLysYoQycYWB4EIaKooGnAnhMcTui2YYrUDAwfMj/4dZntcOaJXPYO/9A==", "message"=>{"username"=>"usertest", "content"=>"testing", "chatroom_id"=>"1"}, "commit"=>"send"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "username", "chatroom_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "testing"], ["username", "usertest"], ["chatroom_id", 1], ["created_at", 2016-09-01 08:08:29 UTC], ["updated_at", 2016-09-01 08:08:29 UTC]]
+  [1m[35m (221.1ms)[0m  [1m[36mcommit transaction[0m
+[ActionCable] Broadcasting to messages: {:message=>#<Message id: 15, content: "testing", username: "usertest", chatroom_id: 1, created_at: "2016-09-01 08:08:29", updated_at: "2016-09-01 08:08:29", picture_file_name: nil, picture_content_type: nil, picture_file_size: nil, picture_updated_at: nil>}
+Completed 200 OK in 225ms (ActiveRecord: 221.8ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-09-01 15:08:53 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:08:53 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-09-01 15:08:53 +0700
+Started GET "/chatrooms/1" for 192.168.0.75 at 2016-09-01 15:09:17 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.3ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [15 times] (2.5ms)
+  Rendered messages/_message_form.html.erb (2.4ms)
+  Rendered chatrooms/show.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 15:09:18 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 15:09:18 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started POST "/messages" for 192.168.0.75 at 2016-09-01 15:09:30 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"isx4JRYWFMEGt3lKrTZNAaHIm+eRDp1UhF6fjJUm3ekzFjjuJwhtvnxXTYs6nRbQZ7Ve0gULmqiWox5+yMNsAA==", "message"=>{"username"=>"usertest", "content"=>"testing 2", "chatroom_id"=>"1"}, "commit"=>"send"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "username", "chatroom_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "testing 2"], ["username", "usertest"], ["chatroom_id", 1], ["created_at", 2016-09-01 08:09:30 UTC], ["updated_at", 2016-09-01 08:09:30 UTC]]
+  [1m[35m (218.2ms)[0m  [1m[36mcommit transaction[0m
+[ActionCable] Broadcasting to messages: {:message=>#<Message id: 16, content: "testing 2", username: "usertest", chatroom_id: 1, created_at: "2016-09-01 08:09:30", updated_at: "2016-09-01 08:09:30", picture_file_name: nil, picture_content_type: nil, picture_file_size: nil, picture_updated_at: nil>}
+Completed 200 OK in 223ms (ActiveRecord: 219.0ms)
+
+
+MessagesChannel transmitting {"message"=>{"id"=>16, "content"=>"testing 2", "username"=>"usertest", "chatroom_id"=>1, "created_at"=>"2016-09-01T08:09:30.863Z", "updated_at"=>"2016-09-01T08:09:30.863Z", "picture_file_name"=>nil, "picture_content_type"=>nil, "picture_file_size"=>nil, "picture_updated_at"=>nil}} (via streamed from messages)
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 15:11:53 +0700
+MessagesChannel stopped streaming from messages
+Started POST "/messages" for 192.168.0.75 at 2016-09-01 15:11:53 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"isx4JRYWFMEGt3lKrTZNAaHIm+eRDp1UhF6fjJUm3ekzFjjuJwhtvnxXTYs6nRbQZ7Ve0gULmqiWox5+yMNsAA==", "message"=>{"username"=>"userupload", "content"=>"test upload picture live", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f2e90267bc0 @tempfile=#<Tempfile:/tmp/RackMultipart20160901-13327-7v1bbx.png>, @original_filename="Screenshot from 2016-06-30 14:58:47.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"message[picture]\"; filename=\"Screenshot from 2016-06-30 14:58:47.png\"\r\nContent-Type: image/png\r\n">, "chatroom_id"=>"1"}, "commit"=>"send"}
+Command :: file -b --mime '/tmp/cc424ce7cac53d5c77b3553a2a79b97520160901-13327-1yqv03c.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/15d7b57cc265d03f384465e20e272e1020160901-13327-yw06xj.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/15d7b57cc265d03f384465e20e272e1020160901-13327-yw06xj.png[0]'
+Command :: convert '/tmp/15d7b57cc265d03f384465e20e272e1020160901-13327-yw06xj.png[0]' -auto-orient -resize "300x300>" '/tmp/385fe6d3f205f49be6f7e65be592f50720160901-13327-1837zq5'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/15d7b57cc265d03f384465e20e272e1020160901-13327-yw06xj.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/15d7b57cc265d03f384465e20e272e1020160901-13327-yw06xj.png[0]'
+Command :: convert '/tmp/15d7b57cc265d03f384465e20e272e1020160901-13327-yw06xj.png[0]' -auto-orient -resize "100x100>" '/tmp/385fe6d3f205f49be6f7e65be592f50720160901-13327-1aegkz6'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/tmp/cc424ce7cac53d5c77b3553a2a79b97520160901-13327-2hqqvb.png'
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "username", "chatroom_id", "created_at", "updated_at", "picture_file_name", "picture_content_type", "picture_file_size", "picture_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["content", "test upload picture live"], ["username", "userupload"], ["chatroom_id", 1], ["created_at", 2016-09-01 08:11:53 UTC], ["updated_at", 2016-09-01 08:11:53 UTC], ["picture_file_name", "Screenshot_from_2016-06-30_14_58_47.png"], ["picture_content_type", "image/png"], ["picture_file_size", 6360], ["picture_updated_at", 2016-09-01 08:11:53 UTC]]
+  [1m[35m (213.5ms)[0m  [1m[36mcommit transaction[0m
+[ActionCable] Broadcasting to messages: {:message=>#<Message id: 17, content: "test upload picture live", username: "userupload", chatroom_id: 1, created_at: "2016-09-01 08:11:53", updated_at: "2016-09-01 08:11:53", picture_file_name: "Screenshot_from_2016-06-30_14_58_47.png", picture_content_type: "image/png", picture_file_size: 6360, picture_updated_at: "2016-09-01 08:11:53">}
+Completed 200 OK in 306ms (ActiveRecord: 213.8ms)
+
+
+Started GET "/" for 192.168.0.75 at 2016-09-01 15:12:49 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 15:12:49 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 15:12:49 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/chatrooms/1" for 192.168.0.75 at 2016-09-01 15:12:51 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [17 times] (1.9ms)
+  Rendered messages/_message_form.html.erb (1.4ms)
+  Rendered chatrooms/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.75 at 2016-09-01 15:24:00 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [17 times] (3.0ms)
+  Rendered messages/_message_form.html.erb (17.3ms)
+  Rendered chatrooms/show.html.erb within layouts/application (53.3ms)
+Completed 200 OK in 335ms (Views: 306.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 15:24:01 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 15:24:01 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started POST "/messages" for 192.168.0.75 at 2016-09-01 15:24:13 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QMrAXRa4UO+t/8wcdZGvA6ZQfjzyPCKdBFNTVyX9EL75EICWJ6YpkNcf+N3iOvTSYC27CWY5JWEWrtKleBihVw==", "message"=>{"username"=>"usertest", "content"=>"test purpose", "chatroom_id"=>"1"}, "commit"=>"send"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "username", "chatroom_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "test purpose"], ["username", "usertest"], ["chatroom_id", 1], ["created_at", 2016-09-01 08:24:13 UTC], ["updated_at", 2016-09-01 08:24:13 UTC]]
+  [1m[35m (189.8ms)[0m  [1m[36mcommit transaction[0m
+[ActionCable] Broadcasting to messages: {:message=>#<Message id: 18, content: "test purpose", username: "usertest", chatroom_id: 1, created_at: "2016-09-01 08:24:13", updated_at: "2016-09-01 08:24:13", picture_file_name: nil, picture_content_type: nil, picture_file_size: nil, picture_updated_at: nil>}
+Completed 200 OK in 198ms (ActiveRecord: 190.2ms)
+
+
+MessagesChannel transmitting {"message"=>{"id"=>18, "content"=>"test purpose", "username"=>"usertest", "chatroom_id"=>1, "created_at"=>"2016-09-01T08:24:13.060Z", "updated_at"=>"2016-09-01T08:24:13.060Z", "picture_file_name"=>nil, "picture_content_type"=>nil, "picture_file_size"=>nil, "picture_updated_at"=>nil}} (via streamed from messages)
+Started GET "/chatrooms/1" for 192.168.0.75 at 2016-09-01 15:27:03 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [18 times] (3.3ms)
+  Rendered messages/_message_form.html.erb (15.1ms)
+  Rendered chatrooms/show.html.erb within layouts/application (47.2ms)
+Completed 200 OK in 235ms (Views: 203.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 15:27:03 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 15:27:03 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 15:27:19 +0700
+MessagesChannel stopped streaming from messages
+Started POST "/messages" for 192.168.0.75 at 2016-09-01 15:27:20 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9o3lNI3a4+bAb16428oY6+Uc1SYczugxK7iRim6qXrNPV6X/vMSambqPanlMYUM6I2EQE4jL7805RRB4M0/vWg==", "message"=>{"username"=>"usertest", "content"=>"test upload 2", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f6b08ab1790 @tempfile=#<Tempfile:/tmp/RackMultipart20160901-13917-149gl1y.png>, @original_filename="before.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"message[picture]\"; filename=\"before.png\"\r\nContent-Type: image/png\r\n">, "chatroom_id"=>"1"}, "commit"=>"send"}
+Command :: file -b --mime '/tmp/2f44417567bc123bd7c60de8c2a2b44420160901-13917-b10zjl.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/2f44417567bc123bd7c60de8c2a2b44420160901-13917-e1g4aj.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/2f44417567bc123bd7c60de8c2a2b44420160901-13917-e1g4aj.png[0]'
+Command :: convert '/tmp/2f44417567bc123bd7c60de8c2a2b44420160901-13917-e1g4aj.png[0]' -auto-orient -resize "300x300>" '/tmp/15ec7939727886ebfb53509974655eb120160901-13917-1p60n7w'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/2f44417567bc123bd7c60de8c2a2b44420160901-13917-e1g4aj.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/2f44417567bc123bd7c60de8c2a2b44420160901-13917-e1g4aj.png[0]'
+Command :: convert '/tmp/2f44417567bc123bd7c60de8c2a2b44420160901-13917-e1g4aj.png[0]' -auto-orient -resize "100x100>" '/tmp/15ec7939727886ebfb53509974655eb120160901-13917-qs031q'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/tmp/2f44417567bc123bd7c60de8c2a2b44420160901-13917-rf7rvi.png'
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "messages" ("content", "username", "chatroom_id", "created_at", "updated_at", "picture_file_name", "picture_content_type", "picture_file_size", "picture_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["content", "test upload 2"], ["username", "usertest"], ["chatroom_id", 1], ["created_at", 2016-09-01 08:27:20 UTC], ["updated_at", 2016-09-01 08:27:20 UTC], ["picture_file_name", "before.png"], ["picture_content_type", "image/png"], ["picture_file_size", 43855], ["picture_updated_at", 2016-09-01 08:27:20 UTC]]
+  [1m[35m (195.3ms)[0m  [1m[36mcommit transaction[0m
+[ActionCable] Broadcasting to messages: {:message=>#<Message id: 19, content: "test upload 2", username: "usertest", chatroom_id: 1, created_at: "2016-09-01 08:27:20", updated_at: "2016-09-01 08:27:20", picture_file_name: "before.png", picture_content_type: "image/png", picture_file_size: 43855, picture_updated_at: "2016-09-01 08:27:20">}
+Completed 200 OK in 321ms (ActiveRecord: 197.6ms)
+
+
+Started GET "/" for 192.168.0.75 at 2016-09-01 15:27:48 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 15:27:48 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 15:27:48 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/chatrooms/1" for 192.168.0.75 at 2016-09-01 15:27:50 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [19 times] (2.2ms)
+  Rendered messages/_message_form.html.erb (1.8ms)
+  Rendered chatrooms/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.75 at 2016-09-01 15:34:51 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [19 times] (3.7ms)
+  Rendered messages/_message_form.html.erb (16.4ms)
+  Rendered chatrooms/show.html.erb within layouts/application (53.1ms)
+Completed 200 OK in 232ms (Views: 202.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 15:34:52 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 15:34:52 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 15:35:23 +0700
+MessagesChannel stopped streaming from messages
+Started POST "/messages" for 192.168.0.75 at 2016-09-01 15:35:23 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OAz0nNyYz3sghVr3+t3DyDo8Hjwbh/RIXy2TCVXIzD6B1rRX7Ya2BFplbjZtdpgZ/EHbCY+C87RN0BL7CC191w==", "message"=>{"username"=>"userupload", "content"=>"test upload test", "picture"=>#<ActionDispatch::Http::UploadedFile:0x00000003f296c8 @tempfile=#<Tempfile:/tmp/RackMultipart20160901-14161-3j91ni.png>, @original_filename="bk.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"message[picture]\"; filename=\"bk.png\"\r\nContent-Type: image/png\r\n">, "chatroom_id"=>"1"}, "commit"=>"send"}
+Command :: file -b --mime '/tmp/7e7ec59d1f4b21021577ff562dc3d48b20160901-14161-12lxtt8.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/7e7ec59d1f4b21021577ff562dc3d48b20160901-14161-dejol4.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/7e7ec59d1f4b21021577ff562dc3d48b20160901-14161-dejol4.png[0]'
+Command :: convert '/tmp/7e7ec59d1f4b21021577ff562dc3d48b20160901-14161-dejol4.png[0]' -auto-orient -resize "300x300>" '/tmp/34dfbf80d47f682a2c5d42da18d8405220160901-14161-1wh14u'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/7e7ec59d1f4b21021577ff562dc3d48b20160901-14161-dejol4.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/7e7ec59d1f4b21021577ff562dc3d48b20160901-14161-dejol4.png[0]'
+Command :: convert '/tmp/7e7ec59d1f4b21021577ff562dc3d48b20160901-14161-dejol4.png[0]' -auto-orient -resize "100x100>" '/tmp/34dfbf80d47f682a2c5d42da18d8405220160901-14161-19s0ooa'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/tmp/7e7ec59d1f4b21021577ff562dc3d48b20160901-14161-zd13vx.png'
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "username", "chatroom_id", "created_at", "updated_at", "picture_file_name", "picture_content_type", "picture_file_size", "picture_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["content", "test upload test"], ["username", "userupload"], ["chatroom_id", 1], ["created_at", 2016-09-01 08:35:23 UTC], ["updated_at", 2016-09-01 08:35:23 UTC], ["picture_file_name", "bk.png"], ["picture_content_type", "image/png"], ["picture_file_size", 256813], ["picture_updated_at", 2016-09-01 08:35:23 UTC]]
+  [1m[35m (176.0ms)[0m  [1m[36mcommit transaction[0m
+[ActionCable] Broadcasting to messages: {:message=>#<Message id: 20, content: "test upload test", username: "userupload", chatroom_id: 1, created_at: "2016-09-01 08:35:23", updated_at: "2016-09-01 08:35:23", picture_file_name: "bk.png", picture_content_type: "image/png", picture_file_size: 256813, picture_updated_at: "2016-09-01 08:35:23">}
+Completed 200 OK in 347ms (ActiveRecord: 177.5ms)
+
+
+Started GET "/" for 192.168.0.75 at 2016-09-01 15:35:32 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.3ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 15:35:32 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 15:35:32 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/chatrooms/1" for 192.168.0.75 at 2016-09-01 15:35:33 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [20 times] (8.1ms)
+  Rendered messages/_message_form.html.erb (1.4ms)
+  Rendered chatrooms/show.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/chatrooms" for 192.168.0.75 at 2016-09-01 16:23:59 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 140ms (Views: 139.3ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAttachmentAvatarToChatrooms (20160901092502)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddAttachmentAvatarToChatrooms < ActiveRecord::Migration[4.2] (called from load at /home/thogmo/.rvm/gems/ruby-2.3.0/bin/rake:23)
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "chatrooms" ADD "avatar_file_name" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "chatrooms" ADD "avatar_content_type" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "chatrooms" ADD "avatar_file_size" integer[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "chatrooms" ADD "avatar_updated_at" datetime[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160901092502"]]
+  [1m[35m (127.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_messages_on_chatroom_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_messages_on_chatroom_id' AND type='index'
+[0m
+Started GET "/" for 192.168.0.75 at 2016-09-01 16:31:14 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 186ms (Views: 174.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 16:31:15 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 16:31:15 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/chatrooms/new" for 192.168.0.75 at 2016-09-01 16:31:18 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#new as HTML
+  Rendering chatrooms/new.html.erb within layouts/application
+  Rendered chatrooms/_form.html.erb (9.0ms)
+  Rendered chatrooms/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 57ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 16:31:56 +0700
+MessagesChannel stopped streaming from messages
+Started POST "/chatrooms" for 192.168.0.75 at 2016-09-01 16:31:56 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GNop/ZQYlBUdYL2q4pXweZU1sSdZfjm1yJLbAhzSGZX4rn3BAlySgCJFJBkQt3W2aOOSHFxWh+Lt7fmAEJUjlg==", "chatroom"=>{"name"=>"Chatroom Avatar1", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007f068cf309c8 @tempfile=#<Tempfile:/tmp/RackMultipart20160901-14748-a1th7p.png>, @original_filename="Screenshot from 2016-06-23 15:28:47.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"chatroom[avatar]\"; filename=\"Screenshot from 2016-06-23 15:28:47.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Chatroom"}
+Command :: file -b --mime '/tmp/a636b31782febd05abcee8b01524640520160901-14748-1mdapgd.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/da1c8cbc91e6a1b27443c9c6de8b91fa20160901-14748-1m1elwl.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/da1c8cbc91e6a1b27443c9c6de8b91fa20160901-14748-1m1elwl.png[0]'
+Command :: convert '/tmp/da1c8cbc91e6a1b27443c9c6de8b91fa20160901-14748-1m1elwl.png[0]' -auto-orient -resize "300x300>" '/tmp/45841f60f25e59ec4d8ca2f7977873bd20160901-14748-1yuuhkz'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/da1c8cbc91e6a1b27443c9c6de8b91fa20160901-14748-1m1elwl.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/da1c8cbc91e6a1b27443c9c6de8b91fa20160901-14748-1m1elwl.png[0]'
+Command :: convert '/tmp/da1c8cbc91e6a1b27443c9c6de8b91fa20160901-14748-1m1elwl.png[0]' -auto-orient -resize "100x100>" '/tmp/45841f60f25e59ec4d8ca2f7977873bd20160901-14748-1vibnge'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime '/tmp/a636b31782febd05abcee8b01524640520160901-14748-1q90es3.png'
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "chatrooms" ("name", "created_at", "updated_at", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chatroom Avatar1"], ["created_at", 2016-09-01 09:31:56 UTC], ["updated_at", 2016-09-01 09:31:56 UTC], ["avatar_file_name", "Screenshot_from_2016-06-23_15_28_47.png"], ["avatar_content_type", "image/png"], ["avatar_file_size", 79114], ["avatar_updated_at", 2016-09-01 09:31:56 UTC]]
+  [1m[35m (181.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.0.75:3000/chatrooms/2
+Completed 302 Found in 351ms (ActiveRecord: 182.3ms)
+
+
+Started GET "/chatrooms/2" for 192.168.0.75 at 2016-09-01 16:31:57 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 2], ["LIMIT", 1]]
+  Rendered messages/_message_form.html.erb (2.3ms)
+  Rendered chatrooms/show.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 61ms (Views: 40.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 16:31:57 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 16:31:57 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 16:34:57 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (40.5ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (97.7ms)
+Completed 200 OK in 1120ms (Views: 928.5ms | ActiveRecord: 40.5ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 16:34:59 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 16:34:59 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 16:34:59 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 108ms (Views: 106.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/chatrooms/new" for 192.168.0.75 at 2016-09-01 16:35:07 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#new as HTML
+  Rendering chatrooms/new.html.erb within layouts/application
+  Rendered chatrooms/_form.html.erb (2.6ms)
+  Rendered chatrooms/new.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 281ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatrooms/new" for 192.168.0.75 at 2016-09-01 16:35:36 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#new as HTML
+  Rendering chatrooms/new.html.erb within layouts/application
+  Rendered chatrooms/_form.html.erb (1.6ms)
+  Rendered chatrooms/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 16:36:08 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 16:36:09 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 16:36:09 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 16:36:09 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 16:36:09 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.3ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/chatrooms/new" for 192.168.0.75 at 2016-09-01 16:36:15 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#new as HTML
+  Rendering chatrooms/new.html.erb within layouts/application
+  Rendered chatrooms/_form.html.erb (1.5ms)
+  Rendered chatrooms/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatrooms/new" for 192.168.0.75 at 2016-09-01 16:36:32 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#new as HTML
+  Rendering chatrooms/new.html.erb within layouts/application
+  Rendered chatrooms/_form.html.erb (3.4ms)
+  Rendered chatrooms/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 16:39:30 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 16:39:31 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cable" for 192.168.0.75 at 2016-09-01 16:39:31 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.75 at 2016-09-01 16:39:31 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.75 at 2016-09-01 16:39:31 +0700
+Cannot render console from 192.168.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 192.168.0.154 at 2016-10-28 11:21:21 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.8ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 665ms (Views: 523.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/cable" for 192.168.0.154 at 2016-10-28 11:21:22 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.154 at 2016-10-28 11:21:23 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 127.0.0.1 at 2016-10-28 11:22:20 +0700
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.3ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-10-28 11:22:20 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-28 11:22:20 +0700
+Request origin not allowed: http://localhost:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-28 11:22:20 +0700
+Finished "/cable/" [WebSocket] for 192.168.0.154 at 2016-10-28 11:38:50 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.154 at 2016-10-28 11:38:55 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 192.168.0.154 at 2016-10-28 11:38:56 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.154 at 2016-10-28 11:38:56 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.154 at 2016-10-28 11:41:10 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.154 at 2016-10-28 11:41:11 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 192.168.0.154 at 2016-10-28 11:41:11 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.154 at 2016-10-28 11:41:11 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.154 at 2016-10-28 11:41:11 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.2ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.154 at 2016-10-28 11:41:47 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.154 at 2016-10-28 11:41:48 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cable" for 192.168.0.154 at 2016-10-28 11:41:48 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.154 at 2016-10-28 11:41:48 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.154 at 2016-10-28 11:44:43 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.154 at 2016-10-28 11:44:44 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cable" for 192.168.0.154 at 2016-10-28 11:44:45 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.154 at 2016-10-28 11:44:45 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.154 at 2016-10-28 11:44:45 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.1ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.154 at 2016-10-28 11:47:05 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.154 at 2016-10-28 11:47:07 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 192.168.0.154 at 2016-10-28 11:47:07 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.154 at 2016-10-28 11:47:07 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.154 at 2016-10-28 11:47:35 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.154 at 2016-10-28 11:47:35 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cable" for 192.168.0.154 at 2016-10-28 11:47:36 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.154 at 2016-10-28 11:47:36 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for 192.168.0.154 at 2016-10-28 11:47:58 +0700
+MessagesChannel stopped streaming from messages
+Started GET "/" for 192.168.0.154 at 2016-10-28 11:47:59 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 192.168.0.154 at 2016-10-28 11:47:59 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.154 at 2016-10-28 11:47:59 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for 192.168.0.154 at 2016-10-28 11:48:00 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.2ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/chatrooms/1" for 192.168.0.154 at 2016-10-28 11:48:22 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChatroom Load (0.5ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = ? LIMIT ?[0m  [["chatroom_id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (5.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = ?[0m  [["chatroom_id", 1]]
+  Rendered collection of messages/_message.html.erb [20 times] (4.8ms)
+  Rendered messages/_message_form.html.erb (127.8ms)
+  Rendered chatrooms/show.html.erb within layouts/application (221.0ms)
+Completed 200 OK in 404ms (Views: 230.1ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/chatrooms" for 192.168.0.154 at 2016-10-28 11:48:30 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#index as HTML
+  Rendering chatrooms/index.html.erb within layouts/application
+  [1m[36mChatroom Load (0.1ms)[0m  [1m[34mSELECT "chatrooms".* FROM "chatrooms"[0m
+  Rendered chatrooms/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chatrooms/new" for 192.168.0.154 at 2016-10-28 11:48:32 +0700
+Cannot render console from 192.168.0.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatroomsController#new as HTML
+  Rendering chatrooms/new.html.erb within layouts/application
+  Rendered chatrooms/_form.html.erb (13.7ms)
+  Rendered chatrooms/new.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 54ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.154 at 2016-10-28 11:49:05 +0700
+MessagesChannel stopped streaming from messages
